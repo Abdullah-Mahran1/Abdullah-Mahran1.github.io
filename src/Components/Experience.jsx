@@ -98,14 +98,15 @@ const Experience = () => {
             .map((item) => (
               // for each card:
               <div className="shadow-lg group container flex flex-wrap justify-center w-full items-center  h-64">
-                <p className="p-2 text-center rounded-t-2xl w-full h-fit bg-white group-hover:bg-blue-950 group-hover:text-white text-blue-950">
-                  {item.title}
-                </p>
-
                 <div
                   style={{ backgroundImage: `url(${item.img})` }}
-                  className="w-full h-3/5 bg-cover group-hover:bg-contain duration-500 bg-center bg-no-repeat"
-                ></div>
+                  className="w-full h-3/5 bg-cover duration-500 bg-center bg-no-repeat"
+                >
+                  {" "}
+                  <p className="p-2 text-center rounded-t-2xl w-full h-fit bg-white group-hover:text-white text-blue-950">
+                    {item.title}
+                  </p>
+                </div>
                 <a className="h-1/5 w-full group" href={item.preview_link}>
                   <button className=" p-2 text-center rounded-b-2xl h-fit w-full bg-white group-hover:bg-blue-950 group-hover:text-white text-blue-950 font-bold">
                     Click to Preview
