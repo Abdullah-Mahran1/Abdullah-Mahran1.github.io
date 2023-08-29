@@ -5,40 +5,36 @@ import ITImg from "../Assets/ITImg.webp";
 import EShopImg from "../Assets/EShopImg.webp";
 import { useState } from "react";
 
+// My experinces as objects
 const experiences = [
   {
     type: "#Web_Dev",
     title: "Simple Blog",
-    code_link: "/",
-    preview_link: "/",
+    preview_link: "https://github.com/Abdullah-Mahran1/Simple_Blog",
     img: BlogImg,
   },
   {
     type: "#Web_Dev",
     title: "Pomodoro Timer Project",
-    code_link: "/",
-    preview_link: "/",
+    preview_link: "https://github.com/Abdullah-Mahran1/Simple_pomodoro",
     img: timerImg,
   },
   {
     type: "#Web_Dev",
     title: "Image search w/unsplash API",
-    code_link: "/",
-    preview_link: "/",
+    preview_link: "https://github.com/Abdullah-Mahran1/image_searcher",
     img: ImgSearch,
   },
   {
     type: "#Non-Dev",
     title: "IT Assistant in QU H10",
-    code_link: "/",
-    preview_link: "/",
+    preview_link: "/portfolio",
     img: ITImg,
   },
   {
     type: "#Non-Dev",
     title: "Stock Management at barcodestore.online",
-    code_link: "/",
-    preview_link: "barcodestore.online",
+    preview_link: "http://www.barcodestore.online",
     img: EShopImg,
   },
 ];
@@ -107,9 +103,16 @@ const Experience = () => {
                     {item.title}
                   </p>
                 </div>
-                <a className="h-1/5 w-full group" href={item.preview_link}>
+                <a
+                  className="h-1/5 w-full group"
+                  href={item.preview_link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button className=" p-2 text-center rounded-b-2xl h-fit w-full bg-white group-hover:font-bold text-blue-950 font-semibold">
-                    Click to Preview
+                    {item.preview_link === "/portfolio"
+                      ? "Mail for details"
+                      : item.preview_link}
                   </button>
                 </a>
               </div>
