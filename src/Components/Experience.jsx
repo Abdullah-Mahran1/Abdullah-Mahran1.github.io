@@ -112,7 +112,7 @@ const Experience = () => {
                   <button className=" p-2 text-center rounded-b-2xl h-fit w-full bg-white group-hover:font-bold text-blue-950 font-semibold">
                     {item.preview_link === "/portfolio"
                       ? "Mail for details"
-                      : item.preview_link}
+                      : "Click to Preview"}
                   </button>
                 </a>
               </div>
