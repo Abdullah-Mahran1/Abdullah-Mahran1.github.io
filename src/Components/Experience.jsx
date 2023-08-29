@@ -100,15 +100,15 @@ const Experience = () => {
               <div className="shadow-lg group container flex flex-wrap justify-center w-full items-center  h-64">
                 <div
                   style={{ backgroundImage: `url(${item.img})` }}
-                  className="w-full h-3/5 bg-cover duration-500 bg-center bg-no-repeat"
+                  className="w-full flex justify-center rounded-t-2xl h-4/5 bg-cover duration-500 bg-center bg-no-repeat"
                 >
                   {" "}
-                  <p className="p-2 text-center rounded-t-2xl w-full h-fit bg-white group-hover:text-white text-blue-950">
+                  <p className="p-1 m-1 text-center rounded-2xl w-fit h-fit group-hover:font-bold bg-white text-blue-950">
                     {item.title}
                   </p>
                 </div>
                 <a className="h-1/5 w-full group" href={item.preview_link}>
-                  <button className=" p-2 text-center rounded-b-2xl h-fit w-full bg-white group-hover:bg-blue-950 group-hover:text-white text-blue-950 font-bold">
+                  <button className=" p-2 text-center rounded-b-2xl h-fit w-full bg-white group-hover:font-bold text-blue-950 font-semibold">
                     Click to Preview
                   </button>
                 </a>
